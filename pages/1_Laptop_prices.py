@@ -47,7 +47,7 @@ if check:
                   bool(re.search('M2|M1 Max', cpu))]
     cores = [2, 4, 6, 8, 10]
     cpu_cores = int(np.select(conditions, cores, default=4))
-    st.write('Estimated Number of Cores is ', cpu_cores)
+    st.write('Estimated Number of Cores is ' + str(cpu_cores))
 ram_type = st.selectbox('Select RAM Type',
                         ['DDR4', 'DDR5', 'LPDDR4X', 'Unified Memory',
                          'LPDDR5', 'LPDDR4', 'LPDDR3', 'Other'])
